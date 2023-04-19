@@ -11,7 +11,7 @@ function Home() {
   const [moviesNewData, setMoviesNewData] = useState([]); //sert pour l'état
 
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    fetch("https://my-movies-backend-bc6k.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setMoviesNewData(data.movies);
